@@ -102,12 +102,6 @@ php artisan test            # 27 tests, in-memory SQLite (configured in phpunit.
 3. Run `php artisan migrate --force` and `php artisan optimize`.
 4. Serve the `public/` directory through Nginx or Apache.
 
-## Author
-
-**Kenneth Andreas** — Software Engineer
-
-GitHub: [@kennethandreas](https://github.com/kennethandreas)
-
 ## License
 
 Released under the [MIT License](LICENSE).
