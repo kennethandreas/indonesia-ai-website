@@ -8,7 +8,7 @@ as the design reference. The study covers requirements analysis, information arc
 and implementation with Laravel, from public pages to a role-based admin area for managing users and
 incoming inquiries.
 
-![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.0--8.3-777BB4?logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-9-FF2D20?logo=laravel&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
 ![Alpine.js](https://img.shields.io/badge/Alpine.js-3-8BC0D0?logo=alpinedotjs&logoColor=white)
@@ -56,12 +56,14 @@ routes/web.php          Public, user and admin route groups
 
 | Layer | Technology |
 |---|---|
-| Backend | PHP 8.0+, Laravel 9, Laravel Breeze, Sanctum |
+| Backend | PHP 8.0–8.3, Laravel 9, Laravel Breeze, Sanctum |
 | Frontend | Blade, Tailwind CSS 3, Alpine.js, Vite 4 |
 | Database | SQLite (development), MySQL/PostgreSQL (production) |
 | Testing | PHPUnit |
 
 ## Getting Started
+
+**Requirements:** PHP 8.0–8.3 (Laravel 9 does not support PHP 8.4), Composer, Node.js.
 
 ```bash
 git clone https://github.com/kennethandreas/indonesia-ai-website.git
@@ -87,6 +89,12 @@ php artisan serve                   # http://127.0.0.1:8000
 
 Contact form emails are delivered once `MAIL_*` settings are configured in `.env`.
 
+### Tests
+
+```bash
+php artisan test            # 27 tests, in-memory SQLite (configured in phpunit.xml)
+```
+
 ### Production checklist
 
 1. Set `APP_ENV=production` and `APP_DEBUG=false`.
@@ -99,6 +107,10 @@ Contact form emails are delivered once `MAIL_*` settings are configured in `.env
 **Kenneth Andreas** — Software Engineer
 
 GitHub: [@kennethandreas](https://github.com/kennethandreas)
+
+## License
+
+Released under the [MIT License](LICENSE).
 
 ---
 
